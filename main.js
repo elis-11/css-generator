@@ -155,22 +155,20 @@ console.log("-14-a-");
 console.log(calculateSum2(calculateSum2(1, 2), calculateSum2(3, 4)));
 
 console.log("-15-FUNCTION-DECLARATION-");
-const calcSum = (n, p) => {
+calcSum(10, 12)
+function calcSum (n, p) {
   let result6 = n + p;
   console.log(result6);
   return result6
 }
-calcSum(10, 12)
-
-
-
 
 console.log("-15-FUNCTION-EXPRESSION-");
 const calcSum1 = (n, p) => {
   let result7 = n + p;
+  console.log(result7);
   return result7
 }
-
+calcSum1(4,5)
 
 
 console.log("--");
