@@ -125,7 +125,23 @@ console.log("Mis");
 console.log("John");
 console.log("Peter");
 
-console.log("-13-");
-console.log("--");
+console.log("-13-calculateSum-");
+const calculateSum = (n, p) => {
+  let result3 = n + p;
+  console.log(1);
+  return result3;
+  // console.log(2);--<--dont right
+};
+let answer = calculateSum(2, 9);
+console.log(answer);
+
+
+console.log("-13-a-");
+const calculateSum1 = (n, p) => {
+  let result4 = n + p;
+  console.log(result4);
+};
+calculateSum1(5, 10);
+
 console.log("--");
 console.log("--");
