@@ -116,4 +116,16 @@ fruits3.forEach(function (value, i) {
   console.log(`element ${value} has index ${i}`);
 });
 
+console.log("-12-function-");
+const greeting3 = (myName) => {
+  console.log(`Hello ${myName}! How are you?`);
+};
+console.log("Liss");
+console.log("Mis");
+console.log("John");
+console.log("Peter");
+
+console.log("-13-");
+console.log("--");
+console.log("--");
 console.log("--");
