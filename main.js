@@ -141,7 +141,7 @@ const calculateSum1 = (n, p) => {
   let result4 = n + p;
   console.log(result4);
 };
-calculateSum1(3, 10);
+calculateSum1(7, 10);
 
 console.log("-14-");
 const calculateSum2 = (n, p) => {
