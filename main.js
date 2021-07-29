@@ -170,7 +170,16 @@ const calcSum1 = (n, p) => {
 }
 calcSum1(4,5)
 
+console.log("-16-OBJECT-");
+const peter={
+  pName: "Peter",
+  age: "28",
+  speciality: "coder",
+  city: "Hamburg"
+}
+console.log(peter);
 
-console.log("--");
+
+
 console.log("--");
 console.log("--");
