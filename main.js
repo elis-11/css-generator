@@ -169,16 +169,17 @@ const calcSum1 = (n, p) => {
 };
 calcSum1(4, 5);
 
-
 console.log("-16-a-function-");
-const petName = "Pet"
-const petAge=29
-const petSpeciality= "coder"
-const petCity="Moscow"
+const petName = "Pet";
+const petAge = 29;
+const petSpeciality = "coder";
+const petCity = "Moscow";
 const sayHi = (petName, petAge, petSpeciality, petCity) => {
-  console.log(`Hi, I'm ${petName}, I'm ${petAge} and I'm ${petSpeciality} from ${petCity}.`);
+  console.log(
+    `Hi, I'm ${petName}, I'm ${petAge} and I'm ${petSpeciality} from ${petCity}.`
+  );
 };
-sayHi(petName, petAge, petSpeciality, petCity)
+sayHi(petName, petAge, petSpeciality, petCity);
 
 console.log("-16-OBJECT-");
 const peter = {
@@ -190,6 +191,75 @@ const peter = {
 console.log(peter);
 console.log(peter.age);
 sayHi(peter.pName, peter.age, peter.speciality, peter.city);
+
+console.log("-16-b-");
+// const elisa = {
+//   eName: "Elisa",
+//   eAge: 27,
+//   eSpeciality: "doctor",
+//   eCity: "Berlin",
+//   sayHello: function (eName, eAge, eSpeciality, eCity) {
+//     console.log(
+//       `Hello I'm ${eName}, I'm ${eAge} and I'm ${eSpeciality} from ${eCity}.`
+//     );
+//   },
+// };
+// elisa.sayHello(elisa.eName, elisa.eAge, elisa.eSpeciality, elisa.eCity);
+
+console.log("-16-b-");
+const elisa = {
+  eName: "Elisa",
+  eAge: 27,
+  eSpeciality: "doctor",
+  eCity: "Berlin",
+  sayHello: function () {
+    console.log(
+      `Hello I'm ${this.eName}, I'm ${this.eAge} and I'm ${this.eSpeciality} from ${this.eCity}.`
+    );
+  },
+};
+elisa.sayHello();
+
+console.log("-17-a-");
+const lisa = {
+  eName: "Lisa",
+  eAge: 37,
+  eSpeciality: "doctor",
+  eCity: "Berlin",
+  sayHello: function () {
+    console.log(
+      `Hello I'm ${this.eName}, I'm ${this.eAge} and I'm ${this.eSpeciality} from ${this.eCity}.`
+    );
+  },
+};
+elisa.sayHello();
+const belisa = {
+  eName: "Belisa",
+  eAge: 20,
+  eSpeciality: "doctor",
+  eCity: "Tokio",
+  sayHello: function () {
+    console.log(
+      `Hello I'm ${this.eName}, I'm ${this.eAge} and I'm ${this.eSpeciality} from ${this.eCity}.`
+    );
+  },
+};
+elisa.sayHello();
+
+console.log("-17-constructor-");
+
+function Person(sname, age, sspec, scity) {
+  this.sname = sname;
+  this.age = age;
+  this.sspec = sspec;
+  this.scity = scity;
+}
+
+const asya = new Person("Asya", 30, "designer", "New York");
+console.log(asya);
+
+const liss = new Person("Liss", 27, "coder", "Delly");
+console.log(liss);
 
 
 console.log("--");
