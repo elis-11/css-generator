@@ -253,14 +253,49 @@ function Person(sname, age, sspec, scity) {
   this.age = age;
   this.sspec = sspec;
   this.scity = scity;
+  this.sayGudBay = function () {
+    console.log(
+      `Hello I'm ${this.sname}, I'm ${this.age} and I'm ${this.sspec} from ${this.scity}.`
+    );
+  };
 }
 
 const asya = new Person("Asya", 30, "designer", "New York");
 console.log(asya);
+asya.sayGudBay();
 
 const liss = new Person("Liss", 27, "coder", "Delly");
 console.log(liss);
+liss.sayGudBay();
 
+console.log("-18-CLASSES-");
+class Person1 {
+  constructor(cname, cage, cspec, ccity) {
+    this.cname = cname;
+    this.cage = cage;
+    this.cspec = cspec;
+    this.ccity = ccity;
+  }
+}
+const marem = new Person1("Marem", 21, "economist", "Brussel");
+console.log(marem);
 
-console.log("--");
+console.log("-18-CLASSES-");
+class Person2 {
+  constructor(cname, cage, cspec, ccity) {
+    this.cname = cname;
+    this.cage = cage;
+    this.cspec = cspec;
+    this.ccity = ccity;
+  }
+  sayGudBay1() {
+    console.log(
+      `Hello, I'm ${this.cname}, I'm ${this.cage} and I'm ${this.cspec} from ${this.ccity}.`
+    );
+  }
+}
+const acrasavka = new Person2("Acrasavka", 18, "criminalist", "Brussel");
+console.log(acrasavka);
+acrasavka.sayGudBay1();
+
 console.log("--");
