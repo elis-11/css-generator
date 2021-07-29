@@ -74,7 +74,7 @@ switch (mark) {
 }
 
 console.log("-9-");
-const fruits = ["Apple", "Mango", "Orange", "Sliva","Tomato", "Potato"];
+const fruits = ["Apple", "Mango", "Orange", "Sliva", "Tomato", "Potato"];
 console.log(fruits);
 console.log(fruits[1]);
 console.log(fruits[2]);
@@ -102,13 +102,18 @@ console.log("finish");
 
 console.log("-11-FOREACH-");
 const fruits1 = ["Apple", "Mango", "Orange", "Sliva"];
-// fruits1.forEach(function (item, index) {
-//   console.log(`element ${item} has index ${index}`);
+fruits1.forEach(function (item, index) {
+  console.log(`element ${item} has index ${index}`);
+});
 
-  // fruits1.forEach(function (value) {
-  //   console.log(`element ${value} `);      
-  fruits1.forEach(function (value, i) {
-    console.log(`element ${value} has index ${i}`);      
+const fruits2 = ["Apple", "Mango", "Orange", "Sliva"];
+fruits2.forEach(function (value) {
+  console.log(`element ${value} `);
+});
+
+const fruits3 = ["Apple", "Mango", "Orange", "Sliva"];
+fruits3.forEach(function (value, i) {
+  console.log(`element ${value} has index ${i}`);
 });
 
 console.log("--");
