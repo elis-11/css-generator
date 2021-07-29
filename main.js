@@ -135,7 +135,6 @@ const calculateSum = (n, p) => {
 let answer = calculateSum(2, 9);
 console.log(answer);
 
-
 console.log("-13-a-");
 const calculateSum1 = (n, p) => {
   let result4 = n + p;
@@ -146,39 +145,51 @@ calculateSum1(7, 10);
 console.log("-14-");
 const calculateSum2 = (n, p) => {
   let result5 = n + p;
-  return result5
-}
-let res = calculateSum2(calculateSum2(25, 7), calculateSum2(47, 6))
+  return result5;
+};
+let res = calculateSum2(calculateSum2(25, 7), calculateSum2(47, 6));
 console.log(res);
 
 console.log("-14-a-");
 console.log(calculateSum2(calculateSum2(1, 2), calculateSum2(3, 4)));
 
 console.log("-15-FUNCTION-DECLARATION-");
-calcSum(10, 12)
-function calcSum (n, p) {
+calcSum(10, 12);
+function calcSum(n, p) {
   let result6 = n + p;
   console.log(result6);
-  return result6
+  return result6;
 }
 
 console.log("-15-FUNCTION-EXPRESSION-");
 const calcSum1 = (n, p) => {
   let result7 = n + p;
   console.log(result7);
-  return result7
-}
-calcSum1(4,5)
+  return result7;
+};
+calcSum1(4, 5);
+
+
+console.log("-16-a-function-");
+const petName = "Pet"
+const petAge=29
+const petSpeciality= "coder"
+const petCity="Moscow"
+const sayHi = (petName, petAge, petSpeciality, petCity) => {
+  console.log(`Hi, I'm ${petName}, I'm ${petAge} and I'm ${petSpeciality} from ${petCity}.`);
+};
+sayHi(petName, petAge, petSpeciality, petCity)
 
 console.log("-16-OBJECT-");
-const peter={
+const peter = {
   pName: "Peter",
-  age: "28",
+  age: 28,
   speciality: "coder",
-  city: "Hamburg"
-}
+  city: "Hamburg",
+};
 console.log(peter);
-
+console.log(peter.age);
+sayHi(peter.pName, peter.age, peter.speciality, peter.city);
 
 
 console.log("--");
