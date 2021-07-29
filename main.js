@@ -61,23 +61,44 @@ switch (mark) {
     console.log("Its bud toolbar, you have 2");
     break;
   case 3:
-    console.log('Its ok, you have 3');
+    console.log("Its ok, you have 3");
     break;
-    case 4:
-      console.log('Its gud, you have 4');
-      break
-      case 5:
-        console.log('Very gud, you have 5');
-        break;
-        default:
-          console.log('there is no such assessment');
+  case 4:
+    console.log("Its gud, you have 4");
+    break;
+  case 5:
+    console.log("Very gud, you have 5");
+    break;
+  default:
+    console.log("there is no such assessment");
 }
 
 console.log("-9-");
-const fruits
+const fruits = ["Apple", "Mango", "Orange", "Sliva"];
+console.log(fruits);
+console.log(fruits[1]);
+console.log(fruits[2]);
+console.log(fruits[0]);
+const example = ["Apple", 20, true, "Orange", false, "Sliva", 300];
+console.log(example);
+console.log(example[0]);
+console.log(example[2]);
+console.log(example[1]);
 
+console.log("-10-for-let-");
+console.log("start");
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+console.log("finish");
 
+console.log("-10-a-for-let-");
+console.log("start");
+for (let i = 0; i < 10; i++) {
+  console.log("hi liss");
+  console.log("i = " + i);
+}
+console.log("finish");
 
-console.log("--");
 console.log("--");
 console.log("--");
